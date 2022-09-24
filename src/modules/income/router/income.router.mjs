@@ -1,16 +1,19 @@
-import { express } from 'express';
+import * as express   from 'express';
 
-function IncomeRouter() {
+class IncomeRouter {
+    
+    router = express.Router();
 
-    const router = express.Router();
+    constructor() {
+        this.config();
+    }
 
-    function config() {
+    config() {
 
-        router.get('/', (req, res, next) => {  });
+        this.router.get('/', (req, res, next) => {  });
 
     }
 
-    config();
 }
 
 export const incomeRouter = new IncomeRouter().router;

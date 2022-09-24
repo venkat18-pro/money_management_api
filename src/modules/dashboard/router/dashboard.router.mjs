@@ -1,16 +1,20 @@
-import { express } from 'express';
+import * as express   from 'express';
 
-function DashboardRouter() {
+class DashboardRouter {
 
-    const router = express.Router();
+    router = express.Router();
 
-    function config() {
+    constructor() {
+        this.config();
+    }
 
-        router.get('/', (req, res, next) => {  });
+    config() {
+
+        this.router.get('/', (req, res, next) => {  });
 
     }
 
-    config();
+
 }
 
 export const dashboardRouter = new DashboardRouter().router;

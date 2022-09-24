@@ -2,10 +2,10 @@
   "name": "mms",
   "version": "1.0.0",
   "description": "money management system.",
-  "main": "server.js",
+  "main": "server.mjs",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.mjs",
+    "start": "nodemon src/server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
