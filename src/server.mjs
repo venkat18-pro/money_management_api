@@ -13,6 +13,6 @@ app.use(express.json());
 
 app.use('/mm/api', baseRouter);
 
-app.listen(3000, () => {
-    console.log("Server is running in ", port)
+app.listen(port, () => {
+    console.log("Server is running in ", port);
 })
