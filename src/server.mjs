@@ -1,9 +1,9 @@
 import 'dotenv/config'
-import * as express from 'express';
+import express from 'express';
 import bodyParser from 'body-parser';
 import { baseRouter } from './router/router.mjs'
 
-const app = express.application;
+const app = express();
 const ENV = process.env;
 const port = ENV.API_PORT
 

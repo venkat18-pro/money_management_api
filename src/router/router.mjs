@@ -1,4 +1,4 @@
-import * as express from 'express';
+import { Router } from 'express';
 import { dashboardRouter } from '../modules/dashboard/router/dashboard.router.mjs'
 import { incomeRouter } from '../modules/income/router/income.router.mjs'
 import { outcomeRouter } from '../modules/outcome/router/outcome.router.mjs' 
@@ -6,7 +6,7 @@ import { userRouter } from '../modules/user/router/user.router.mjs'
 
 class BaseRouter {
     
-    router = express.Router();
+    router = Router();
 
     constructor() {
         this.config();

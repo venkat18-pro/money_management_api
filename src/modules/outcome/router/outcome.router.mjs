@@ -1,8 +1,8 @@
-import * as express  from 'express';
+import { Router } from 'express';
 
 class OutcomeRouter {
 
-    router = express.Router();
+    router = Router();
 
     constructor() {
         this.config();
